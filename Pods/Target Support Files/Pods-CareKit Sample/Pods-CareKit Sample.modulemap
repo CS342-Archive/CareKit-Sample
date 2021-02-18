@@ -1,0 +1,6 @@
+framework module Pods_CareKit_Sample {
+  umbrella header "Pods-CareKit Sample-umbrella.h"
+
+  export *
+  module * { export * }
+}
