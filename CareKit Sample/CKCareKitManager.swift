@@ -26,6 +26,7 @@ class CKCareKitManager: NSObject {
         super.init()
         
         coreDataStore = OCKStore(name: "CKSampleCareKitStore", securityApplicationGroupIdentifier: nil, type: coreDataStoreType, remote: CKCareKitRemoteSyncWithFirestore())
+//        coreDataStore = OCKStore(name: "CKSampleCareKitStore", securityApplicationGroupIdentifier: nil, type: .inMemory)
         
         initStore(forceUpdate: coreDataStoreType == .inMemory)
 

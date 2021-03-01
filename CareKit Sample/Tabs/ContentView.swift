@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    let color: Color
+    let config = Config.shared
+    
+    init() {
+        self.color = Color(config.readColor(query: "Primary Color"))
+    }
+
     var body: some View {
         TabView {
             ScheduleViewControllerRepresentable().tabItem {
@@ -20,6 +27,7 @@ struct ContentView: View {
                 Text("Contact")
             }
         }
+        .accentColor(self.color)
     }
 }
 

@@ -20,18 +20,10 @@ class ScheduleViewController: OCKDailyPageViewController {
     
     override func dailyPageViewController(_ dailyPageViewController: OCKDailyPageViewController, prepare listViewController: OCKListViewController, for date: Date) {
         
-        // Meds
-        let medsViewController = OCKGridTaskViewController(taskID: "meds", eventQuery: OCKEventQuery(for: date), storeManager: storeManager)
-        listViewController.appendViewController(medsViewController, animated: true)
-        
+    
         // Rehab
         let rehabViewController = OCKGridTaskViewController(taskID: "rehab", eventQuery: OCKEventQuery(for: date), storeManager: storeManager)
         listViewController.appendViewController(rehabViewController, animated: true)
-        
-        // Charts
-        let rehabConfig = OCKDataSeriesConfiguration(taskID: "rehab", legendTitle: "Rehab", gradientStartColor: .systemGray, gradientEndColor: .systemGray, markerSize: 6, eventAggregator: .countOutcomeValues)
-        let rehabCharts = OCKCartesianChartViewController(plotType: .bar, selectedDate: date, configurations: [rehabConfig], storeManager: storeManager)
-        listViewController.appendViewController(rehabCharts, animated: true)
         
         // Survey
         let surveyCard = SurveyItemViewController(
@@ -43,7 +35,6 @@ class ScheduleViewController: OCKDailyPageViewController {
         
         super.dailyPageViewController(dailyPageViewController, prepare: listViewController, for: date)
     }
-    
 }
 
 private extension View {
@@ -53,3 +44,4 @@ private extension View {
         return viewController
     }
 }
+
