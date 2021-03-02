@@ -82,23 +82,6 @@ class SurveyItemViewController: OCKInstructionsTaskViewController, ORKTaskViewCo
         let skinWorseningQuestionStep = ORKQuestionStep(identifier: "SkinWorseningQuestionStep", title: "Skin Evolution", question: "Did any of the below symptoms worsen since you started your routine?", answer: skinImprovementAnswerFormat)
         steps += [skinWorseningQuestionStep]
 
-        // Question 5 is asking to upload a dail photo
-        let instructionStep = ORKInstructionStep(identifier: "imageCaptureInstructionStep")
-        instructionStep.title = NSLocalizedString("Time to take a selfie so we can keep track of your skin progression", comment: "")
-        instructionStep.text = "Please take a photo of yourself, position your face as indicated and make sure you have good lighting."
-        let handSolidImage = UIImage(systemName: "person.fill")!
-        instructionStep.image = handSolidImage.withRenderingMode(.alwaysTemplate)
-        instructionStep.isOptional = true
-
-        let imageCaptureStep = ORKImageCaptureStep(identifier: String(describing: "imageCaptureStep"))
-        imageCaptureStep.title = NSLocalizedString("Image Capture", comment: "")
-        imageCaptureStep.isOptional = true
-        imageCaptureStep.accessibilityInstructions = NSLocalizedString("Your instructions for capturing the image", comment: "")
-        imageCaptureStep.accessibilityHint = NSLocalizedString("Captures the image visible in the preview", comment: "")
-        imageCaptureStep.templateImage = UIImage(named: "oval")!
-        imageCaptureStep.templateImageInsets = UIEdgeInsets(top: 0.05, left: 0.05, bottom: 0.05, right: 0.05)
-        steps += [instructionStep, imageCaptureStep]
-
         // Summary step
         let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
         summaryStep.title = "All done!"
@@ -132,7 +115,7 @@ class SurveyItemViewController: OCKInstructionsTaskViewController, ORKTaskViewCo
         }
 
         // 4a. Retrieve the result from the ResearchKit survey
-//        let survey = taskViewController.result.results!.first(where: { $0.identifier == "feedback" }) as! ORKStepResult
+//        let survey = taskViewController.result.results!.first(where: { $0.identifier == "moodTypeQuestionStep" }) as! ORKStepResult
 //        let feedbackResult = survey.results!.first as! ORKScaleQuestionResult
 //        let answer = Int(truncating: feedbackResult.scaleAnswer!)
 //
@@ -162,9 +145,9 @@ class SurveyItemViewSynchronizer: OCKInstructionsTaskViewSynchronizer {
         let firstEvent = element?.first
         
         if let answer = firstEvent?.outcome?.values.first?.integerValue {
-            view.headerView.detailLabel.text = "CardinalKit Rating: \(answer)"
+            view.headerView.detailLabel.text = "Thank you for completing your survey."
         } else {
-            view.headerView.detailLabel.text = "How is your skin today?"
+            view.headerView.detailLabel.text = "How are you feeling today?"
         }
     }
 }

@@ -24,10 +24,10 @@
 		8EE530BF25D8E31100E92C82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE530BE25D8E31100E92C82 /* ContentView.swift */; };
 		8EE530C125D8E31200E92C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE530C025D8E31200E92C82 /* Assets.xcassets */; };
 		8EE530C425D8E31200E92C82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE530C325D8E31200E92C82 /* Preview Assets.xcassets */; };
-		8EE530CE25D8E41200E92C82 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530CD25D8E41200E92C82 /* SwiftPackageProductDependency */; };
-		8EE530D025D8E41200E92C82 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530CF25D8E41200E92C82 /* SwiftPackageProductDependency */; };
-		8EE530D225D8E41200E92C82 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530D125D8E41200E92C82 /* SwiftPackageProductDependency */; };
-		8EE530D425D8E41200E92C82 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530D325D8E41200E92C82 /* SwiftPackageProductDependency */; };
+		8EE530CE25D8E41200E92C82 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530CD25D8E41200E92C82 /* CareKitStore */; };
+		8EE530D025D8E41200E92C82 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530CF25D8E41200E92C82 /* CareKit */; };
+		8EE530D225D8E41200E92C82 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530D125D8E41200E92C82 /* CareKitFHIR */; };
+		8EE530D425D8E41200E92C82 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530D325D8E41200E92C82 /* CareKitUI */; };
 		CE0B6EC051BEC21932F879CA /* Pods_CareKit_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802A4A5BA15F6E096A993083 /* Pods_CareKit_Sample.framework */; };
 		F659CF2C25E4A2CB0063E480 /* acne_classification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F659CF2B25E4A2CB0063E480 /* acne_classification.mlmodel */; };
 		F65E663725E399430009CBB4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65E663625E399430009CBB4 /* Launch Screen.storyboard */; };
@@ -42,6 +42,8 @@
 		F65E665E25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */; };
 		F65E669D25E3B39A0009CBB4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E669C25E3B39A0009CBB4 /* PageViewController.swift */; };
 		F67EF41125EC82BB00E7713E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */; };
+		F6836BFE25EDBA2800E329B6 /* SkinAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6836BFD25EDBA2800E329B6 /* SkinAIViewController.swift */; };
+		F6836C0125EDC35E00E329B6 /* AcneScoreUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6836C0025EDC35E00E329B6 /* AcneScoreUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCoordinator.swift; sourceTree = "<group>"; };
 		F65E669C25E3B39A0009CBB4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6836BFD25EDBA2800E329B6 /* SkinAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinAIViewController.swift; sourceTree = "<group>"; };
+		F6836C0025EDC35E00E329B6 /* AcneScoreUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcneScoreUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE530D025D8E41200E92C82 /* BuildFile in Frameworks */,
-				8EE530D225D8E41200E92C82 /* BuildFile in Frameworks */,
-				8EE530D425D8E41200E92C82 /* BuildFile in Frameworks */,
-				8EE530CE25D8E41200E92C82 /* BuildFile in Frameworks */,
+				8EE530D025D8E41200E92C82 /* CareKit in Frameworks */,
+				8EE530D225D8E41200E92C82 /* CareKitFHIR in Frameworks */,
+				8EE530D425D8E41200E92C82 /* CareKitUI in Frameworks */,
+				8EE530CE25D8E41200E92C82 /* CareKitStore in Frameworks */,
 				CE0B6EC051BEC21932F879CA /* Pods_CareKit_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +135,8 @@
 			children = (
 				8E7FFF9525DA4638002982B4 /* TipView.swift */,
 				8E7FFF9625DA4638002982B4 /* SurveyItemViewController.swift */,
+				F6836BFD25EDBA2800E329B6 /* SkinAIViewController.swift */,
+				F6836C0025EDC35E00E329B6 /* AcneScoreUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,10 +280,10 @@
 			);
 			name = "CareKit Sample";
 			packageProductDependencies = (
-				8EE530CD25D8E41200E92C82 /* SwiftPackageProductDependency */,
-				8EE530CF25D8E41200E92C82 /* SwiftPackageProductDependency */,
-				8EE530D125D8E41200E92C82 /* SwiftPackageProductDependency */,
-				8EE530D325D8E41200E92C82 /* SwiftPackageProductDependency */,
+				8EE530CD25D8E41200E92C82 /* CareKitStore */,
+				8EE530CF25D8E41200E92C82 /* CareKit */,
+				8EE530D125D8E41200E92C82 /* CareKitFHIR */,
+				8EE530D325D8E41200E92C82 /* CareKitUI */,
 			);
 			productName = "CareKit Sample";
 			productReference = 8EE530B925D8E31100E92C82 /* CareKit Sample.app */;
@@ -308,7 +314,7 @@
 			);
 			mainGroup = 8EE530B025D8E31100E92C82;
 			packageReferences = (
-				8EE530CC25D8E41200E92C82 /* RemoteSwiftPackageReference */,
+				8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */,
 			);
 			productRefGroup = 8EE530BA25D8E31100E92C82 /* Products */;
 			projectDirPath = "";
@@ -399,11 +405,13 @@
 				8E7FFF9A25DA4638002982B4 /* SurveyItemViewController.swift in Sources */,
 				F65E669D25E3B39A0009CBB4 /* PageViewController.swift in Sources */,
 				F65E663D25E39C2F0009CBB4 /* OnboardingUIView.swift in Sources */,
+				F6836C0125EDC35E00E329B6 /* AcneScoreUIView.swift in Sources */,
 				8E7FFF8925DA267E002982B4 /* CKStudyUser.swift in Sources */,
 				8E7FFF8225DA24AA002982B4 /* CKCareKitManager.swift in Sources */,
 				F65E664E25E39FF20009CBB4 /* Constants.swift in Sources */,
 				8E7FFF9D25DA4656002982B4 /* CareTeamViewControllerRepresentable.swift in Sources */,
 				8EE530BF25D8E31100E92C82 /* ContentView.swift in Sources */,
+				F6836BFE25EDBA2800E329B6 /* SkinAIViewController.swift in Sources */,
 				8EE530BD25D8E31100E92C82 /* CareKit_SampleApp.swift in Sources */,
 				8E7FFFAC25DA4E05002982B4 /* ORKESerialization.m in Sources */,
 			);
@@ -603,7 +611,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8EE530CC25D8E41200E92C82 /* RemoteSwiftPackageReference */ = {
+		8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carekit-apple/CareKit";
 			requirement = {
@@ -614,24 +622,24 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8EE530CD25D8E41200E92C82 /* SwiftPackageProductDependency */ = {
+		8EE530CD25D8E41200E92C82 /* CareKitStore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8EE530CC25D8E41200E92C82 /* RemoteSwiftPackageReference */;
+			package = 8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */;
 			productName = CareKitStore;
 		};
-		8EE530CF25D8E41200E92C82 /* SwiftPackageProductDependency */ = {
+		8EE530CF25D8E41200E92C82 /* CareKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8EE530CC25D8E41200E92C82 /* RemoteSwiftPackageReference */;
+			package = 8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */;
 			productName = CareKit;
 		};
-		8EE530D125D8E41200E92C82 /* SwiftPackageProductDependency */ = {
+		8EE530D125D8E41200E92C82 /* CareKitFHIR */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8EE530CC25D8E41200E92C82 /* RemoteSwiftPackageReference */;
+			package = 8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */;
 			productName = CareKitFHIR;
 		};
-		8EE530D325D8E41200E92C82 /* SwiftPackageProductDependency */ = {
+		8EE530D325D8E41200E92C82 /* CareKitUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8EE530CC25D8E41200E92C82 /* RemoteSwiftPackageReference */;
+			package = 8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */;
 			productName = CareKitUI;
 		};
 /* End XCSwiftPackageProductDependency section */

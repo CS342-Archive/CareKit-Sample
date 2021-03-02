@@ -17,6 +17,7 @@ internal extension OCKStore {
     func populateSampleData() {
         seedLiveLectureTasks()
         seedResearchKitSample()
+        seedSkinAI()
         createContacts()
     }
     
@@ -81,9 +82,17 @@ internal extension OCKStore {
         let surveySchedule = OCKSchedule.dailyAtTime(hour: 12, minutes: 0, start: Date(), end: nil, text: nil)
         var survey = OCKTask(id: "survey", title: "Take your skin survey", carePlanUUID: nil, schedule: surveySchedule)
         survey.impactsAdherence = true
-        survey.instructions = "Please take your skin survey so we can monitor you skin progession."
+        survey.instructions = "Please take your skin survey so we can know how you are doing."
         
         addTasks([survey], callbackQueue: .main, completion: nil)
     }
     
+    fileprivate func seedSkinAI() {
+        let skinAISchedule = OCKSchedule.dailyAtTime(hour: 12, minutes: 0, start: Date(), end: nil, text: nil)
+        var skinAI = OCKTask(id: "skinAI", title: "Take your skin diagnosis", carePlanUUID: nil, schedule: skinAISchedule)
+        skinAI.impactsAdherence = true
+        skinAI.instructions = "Please take your skin diagnosis so we can monitor you skin progession."
+        
+        addTasks([skinAI], callbackQueue: .main, completion: nil)
+    }
 }

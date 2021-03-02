@@ -11,6 +11,8 @@ import CareKitStore
 import UIKit
 import SwiftUI
 
+
+
 class ScheduleViewController: OCKDailyPageViewController {
     
     override func viewDidLoad() {
@@ -32,6 +34,14 @@ class ScheduleViewController: OCKDailyPageViewController {
             eventQuery: .init(for: date),
             storeManager: self.storeManager)
         listViewController.appendViewController(surveyCard, animated: true)
+        
+        // SkinAI
+        let skinAIViewController = SkinAIViewController(
+            viewSynchronizer: SkinAIViewSynchronizer(),
+            taskID: "skinAI",
+            eventQuery: .init(for: date),
+            storeManager: self.storeManager)
+        listViewController.appendViewController(skinAIViewController, animated: true)
         
         super.dailyPageViewController(dailyPageViewController, prepare: listViewController, for: date)
     }
