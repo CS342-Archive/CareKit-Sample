@@ -66,10 +66,12 @@ class AcneModelViewController: OCKInstructionsTaskViewController, UIImagePickerC
               fatalError("Unexpected results")
           }
           
-          // Update the Main UI Thread with our result
-          DispatchQueue.main.async { [weak self] in
-            self?.acneLevel = topResult.identifier
-            print("acne level: \(String(describing: self?.acneLevel))")
+        // UserDefaults.standard.set(topResult.identifier, forKey: "acneLevel")
+        self?.acneLevel = topResult.identifier
+        
+        // Update the Main UI Thread with our result
+        DispatchQueue.main.async { [weak self] in
+        print("acne level: \(String(describing: self?.acneLevel))")
 //            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 //              // Show result on screen here using identifier
 //                print("\(topResult.identifier) with \(Int(topResult.confidence * 100))% confidence")
@@ -95,15 +97,16 @@ class AcneModelViewController: OCKInstructionsTaskViewController, UIImagePickerC
             return
         }
         
-    // 4a. Retrieve the result from the ResearchKit survey
-    let acneLevel = "mild"
-//    let acneLevel = self.acneLevel
-            
-    // 4b. Save the result into CareKit's store
-    controller.appendOutcomeValue(value: acneLevel, at: IndexPath(item: 0, section: 0), completion: nil)
+        // 4a. Retrieve the result from the ResearchKit survey
+//        if let savedData = UserDefaults.standard.string(forKey: "acneLevel") {
+//            self.acneLevel = savedData
+//        }
 
-    let gcpDelegate = CKUploadToGCPTaskViewControllerDelegate()
-    gcpDelegate.taskViewController(taskViewController, didFinishWith: reason, error: error)
+        // 4b. Save the result into CareKit's store
+        controller.appendOutcomeValue(value: self.acneLevel, at: IndexPath(item: 0, section: 0), completion: nil)
+
+        let gcpDelegate = CKUploadToGCPTaskViewControllerDelegate()
+        gcpDelegate.taskViewController(taskViewController, didFinishWith: reason, error: error)
     }
 }
 
