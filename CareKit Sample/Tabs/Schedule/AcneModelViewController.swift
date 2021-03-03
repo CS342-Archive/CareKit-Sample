@@ -14,30 +14,11 @@ import CareKit
 import CareKitUI
 import CareKitStore
 
-class SkinAIViewController: OCKInstructionsTaskViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate, ORKTaskViewControllerDelegate {
-    
-    func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
-        taskViewController.dismiss(animated: true, completion: nil)
-        guard reason == .completed else {
-            taskView.completionButton.isSelected = false
-            return
-        }
-        
-    // 4a. Retrieve the result from the ResearchKit survey
-//    let survey = taskViewController.result.results!.first(where: { $0.identifier == "feedback" }) as! ORKStepResult
-//    let feedbackResult = survey.results!.first as! ORKScaleQuestionResult
-//    let answer = Int(truncating: feedbackResult.scaleAnswer!)
-//
-//    // 4b. Save the result into CareKit's store
-//    controller.appendOutcomeValue(value: answer, at: IndexPath(item: 0, section: 0), completion: nil)
-        
-        
-    let gcpDelegate = CKUploadToGCPTaskViewControllerDelegate()
-    gcpDelegate.taskViewController(taskViewController, didFinishWith: reason, error: error)
-    }
-    
+class AcneModelViewController: OCKInstructionsTaskViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate, ORKTaskViewControllerDelegate {
     
     var image: UIImage!
+    var acneLevel: String = ""
+    
     // 2. This method is called when the use taps the button!
     override func taskView(_ taskView: UIView & OCKTaskDisplayable, didCompleteEvent isComplete: Bool, at indexPath: IndexPath, sender: Any?) {
 
@@ -84,13 +65,15 @@ class SkinAIViewController: OCKInstructionsTaskViewController, UIImagePickerCont
             else {
               fatalError("Unexpected results")
           }
+          
           // Update the Main UI Thread with our result
           DispatchQueue.main.async { [weak self] in
-            print("\(topResult.identifier) with \(Int(topResult.confidence * 100))% confidence")
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-              // Show result on screen here using identifier
-                print("\(topResult.identifier) with \(Int(topResult.confidence * 100))% confidence")
-            }
+            self?.acneLevel = topResult.identifier
+            print("acne level: \(String(describing: self?.acneLevel))")
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//              // Show result on screen here using identifier
+//                print("\(topResult.identifier) with \(Int(topResult.confidence * 100))% confidence")
+//            }
           }
         }
         guard let ciImage = CIImage(image: self.image!)
@@ -104,6 +87,24 @@ class SkinAIViewController: OCKInstructionsTaskViewController, UIImagePickerCont
           }
         }
       }
+
+    func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
+        taskViewController.dismiss(animated: true, completion: nil)
+        guard reason == .completed else {
+            taskView.completionButton.isSelected = false
+            return
+        }
+        
+    // 4a. Retrieve the result from the ResearchKit survey
+    let acneLevel = "mild"
+//    let acneLevel = self.acneLevel
+            
+    // 4b. Save the result into CareKit's store
+    controller.appendOutcomeValue(value: acneLevel, at: IndexPath(item: 0, section: 0), completion: nil)
+
+    let gcpDelegate = CKUploadToGCPTaskViewControllerDelegate()
+    gcpDelegate.taskViewController(taskViewController, didFinishWith: reason, error: error)
+    }
 }
 
 
@@ -123,8 +124,8 @@ class SkinAIViewSynchronizer: OCKInstructionsTaskViewSynchronizer {
         let element: [OCKAnyEvent]? = context.viewModel.first
         let firstEvent = element?.first
         
-        if let answer = firstEvent?.outcome?.values.first?.integerValue {
-            view.headerView.detailLabel.text = "Thank you for taking your sikin diagnosis."
+        if let acneLevel = firstEvent?.outcome?.values.first {
+            view.headerView.detailLabel.text = "Thank you for taking your skin diagnosis. Your skin today is \(acneLevel)"
         } else {
             view.headerView.detailLabel.text = "How is your skin today?"
         }

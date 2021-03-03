@@ -21,7 +21,6 @@
 		8E7FFFAC25DA4E05002982B4 /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFFAA25DA4E05002982B4 /* ORKESerialization.m */; };
 		8E7FFFAF25DA56E2002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFFAE25DA56E2002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift */; };
 		8EE530BD25D8E31100E92C82 /* CareKit_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE530BC25D8E31100E92C82 /* CareKit_SampleApp.swift */; };
-		8EE530BF25D8E31100E92C82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE530BE25D8E31100E92C82 /* ContentView.swift */; };
 		8EE530C125D8E31200E92C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE530C025D8E31200E92C82 /* Assets.xcassets */; };
 		8EE530C425D8E31200E92C82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE530C325D8E31200E92C82 /* Preview Assets.xcassets */; };
 		8EE530CE25D8E41200E92C82 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530CD25D8E41200E92C82 /* CareKitStore */; };
@@ -42,8 +41,8 @@
 		F65E665E25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */; };
 		F65E669D25E3B39A0009CBB4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E669C25E3B39A0009CBB4 /* PageViewController.swift */; };
 		F67EF41125EC82BB00E7713E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */; };
-		F6836BFE25EDBA2800E329B6 /* SkinAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6836BFD25EDBA2800E329B6 /* SkinAIViewController.swift */; };
-		F6836C0125EDC35E00E329B6 /* AcneScoreUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6836C0025EDC35E00E329B6 /* AcneScoreUIView.swift */; };
+		F6836BFE25EDBA2800E329B6 /* AcneModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */; };
+		F68F128F25EF35F900DF109B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68F128E25EF35F900DF109B /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +65,6 @@
 		8E7FFFAE25DA56E2002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKUploadToGCPTaskViewControllerDelegate.swift; sourceTree = "<group>"; };
 		8EE530B925D8E31100E92C82 /* CareKit Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CareKit Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE530BC25D8E31100E92C82 /* CareKit_SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKit_SampleApp.swift; sourceTree = "<group>"; };
-		8EE530BE25D8E31100E92C82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8EE530C025D8E31200E92C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EE530C325D8E31200E92C82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EE530C525D8E31200E92C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,8 +82,8 @@
 		F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCoordinator.swift; sourceTree = "<group>"; };
 		F65E669C25E3B39A0009CBB4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F6836BFD25EDBA2800E329B6 /* SkinAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinAIViewController.swift; sourceTree = "<group>"; };
-		F6836C0025EDC35E00E329B6 /* AcneScoreUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcneScoreUIView.swift; sourceTree = "<group>"; };
+		F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcneModelViewController.swift; sourceTree = "<group>"; };
+		F68F128E25EF35F900DF109B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +115,8 @@
 			children = (
 				8E7FFF9425DA4638002982B4 /* Views */,
 				8E7FFF9225DA4635002982B4 /* ScheduleViewController.swift */,
+				8E7FFF9625DA4638002982B4 /* SurveyItemViewController.swift */,
+				F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */,
 				8E7FFF9325DA4636002982B4 /* ScheduleViewControllerRepresentable.swift */,
 			);
 			path = Schedule;
@@ -134,9 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				8E7FFF9525DA4638002982B4 /* TipView.swift */,
-				8E7FFF9625DA4638002982B4 /* SurveyItemViewController.swift */,
-				F6836BFD25EDBA2800E329B6 /* SkinAIViewController.swift */,
-				F6836C0025EDC35E00E329B6 /* AcneScoreUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,10 +154,10 @@
 				F65E662025E3958D0009CBB4 /* Onboarding */,
 				8E7FFF9025DA4621002982B4 /* Schedule */,
 				8E7FFF9125DA4626002982B4 /* Care Team */,
-				8EE530BE25D8E31100E92C82 /* ContentView.swift */,
 				F65E663925E39B910009CBB4 /* LaunchUIView.swift */,
 				F65E664725E39EC60009CBB4 /* Config.swift */,
 				F65E665225E3A1330009CBB4 /* Metrics.swift */,
+				F68F128E25EF35F900DF109B /* ContentView.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -397,6 +394,7 @@
 				F65E665E25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift in Sources */,
 				F65E664825E39EC60009CBB4 /* Config.swift in Sources */,
 				F65E664425E39CD30009CBB4 /* OnboardingSurveyViewController.swift in Sources */,
+				F68F128F25EF35F900DF109B /* ContentView.swift in Sources */,
 				8E7FFF7E25DA2476002982B4 /* CKCareKitRemoteSyncWithFirestore.swift in Sources */,
 				8E7FFF9925DA4638002982B4 /* TipView.swift in Sources */,
 				8E7FFF9725DA4638002982B4 /* ScheduleViewController.swift in Sources */,
@@ -405,13 +403,11 @@
 				8E7FFF9A25DA4638002982B4 /* SurveyItemViewController.swift in Sources */,
 				F65E669D25E3B39A0009CBB4 /* PageViewController.swift in Sources */,
 				F65E663D25E39C2F0009CBB4 /* OnboardingUIView.swift in Sources */,
-				F6836C0125EDC35E00E329B6 /* AcneScoreUIView.swift in Sources */,
 				8E7FFF8925DA267E002982B4 /* CKStudyUser.swift in Sources */,
 				8E7FFF8225DA24AA002982B4 /* CKCareKitManager.swift in Sources */,
 				F65E664E25E39FF20009CBB4 /* Constants.swift in Sources */,
 				8E7FFF9D25DA4656002982B4 /* CareTeamViewControllerRepresentable.swift in Sources */,
-				8EE530BF25D8E31100E92C82 /* ContentView.swift in Sources */,
-				F6836BFE25EDBA2800E329B6 /* SkinAIViewController.swift in Sources */,
+				F6836BFE25EDBA2800E329B6 /* AcneModelViewController.swift in Sources */,
 				8EE530BD25D8E31100E92C82 /* CareKit_SampleApp.swift in Sources */,
 				8E7FFFAC25DA4E05002982B4 /* ORKESerialization.m in Sources */,
 			);

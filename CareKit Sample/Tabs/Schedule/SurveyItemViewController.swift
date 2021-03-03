@@ -118,10 +118,10 @@ class SurveyItemViewController: OCKInstructionsTaskViewController, ORKTaskViewCo
 //        let survey = taskViewController.result.results!.first(where: { $0.identifier == "moodTypeQuestionStep" }) as! ORKStepResult
 //        let feedbackResult = survey.results!.first as! ORKScaleQuestionResult
 //        let answer = Int(truncating: feedbackResult.scaleAnswer!)
-//
+
 //        // 4b. Save the result into CareKit's store
-//        controller.appendOutcomeValue(value: answer, at: IndexPath(item: 0, section: 0), completion: nil)
-//
+        controller.appendOutcomeValue(value: true, at: IndexPath(item: 0, section: 0), completion: nil)
+
 //        // 5. Upload results to GCP, using the CKTaskViewControllerDelegate class.
         let gcpDelegate = CKUploadToGCPTaskViewControllerDelegate()
         gcpDelegate.taskViewController(taskViewController, didFinishWith: reason, error: error)
@@ -144,7 +144,7 @@ class SurveyItemViewSynchronizer: OCKInstructionsTaskViewSynchronizer {
         let element: [OCKAnyEvent]? = context.viewModel.first
         let firstEvent = element?.first
         
-        if let answer = firstEvent?.outcome?.values.first?.integerValue {
+        if (firstEvent?.outcome?.values.first) != nil {
             view.headerView.detailLabel.text = "Thank you for completing your survey."
         } else {
             view.headerView.detailLabel.text = "How are you feeling today?"

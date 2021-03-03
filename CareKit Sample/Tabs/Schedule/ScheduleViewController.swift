@@ -36,7 +36,7 @@ class ScheduleViewController: OCKDailyPageViewController {
         listViewController.appendViewController(surveyCard, animated: true)
         
         // SkinAI
-        let skinAIViewController = SkinAIViewController(
+        let skinAIViewController = AcneModelViewController(
             viewSynchronizer: SkinAIViewSynchronizer(),
             taskID: "skinAI",
             eventQuery: .init(for: date),
