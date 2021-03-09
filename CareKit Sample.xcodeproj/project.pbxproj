@@ -28,7 +28,6 @@
 		8EE530D225D8E41200E92C82 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530D125D8E41200E92C82 /* CareKitFHIR */; };
 		8EE530D425D8E41200E92C82 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530D325D8E41200E92C82 /* CareKitUI */; };
 		CE0B6EC051BEC21932F879CA /* Pods_CareKit_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802A4A5BA15F6E096A993083 /* Pods_CareKit_Sample.framework */; };
-		F659CF2C25E4A2CB0063E480 /* acne_classification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F659CF2B25E4A2CB0063E480 /* acne_classification.mlmodel */; };
 		F65E663725E399430009CBB4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65E663625E399430009CBB4 /* Launch Screen.storyboard */; };
 		F65E663A25E39B910009CBB4 /* LaunchUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E663925E39B910009CBB4 /* LaunchUIView.swift */; };
 		F65E663D25E39C2F0009CBB4 /* OnboardingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E663C25E39C2F0009CBB4 /* OnboardingUIView.swift */; };
@@ -40,6 +39,7 @@
 		F65E665725E3A3530009CBB4 /* PasswordlessLoginStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E665625E3A3530009CBB4 /* PasswordlessLoginStep.swift */; };
 		F65E665E25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */; };
 		F65E669D25E3B39A0009CBB4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E669C25E3B39A0009CBB4 /* PageViewController.swift */; };
+		F66F913E25F70FF900A78360 /* acne_classification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F66F913D25F70FF900A78360 /* acne_classification.mlmodel */; };
 		F67EF41125EC82BB00E7713E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */; };
 		F6836BFE25EDBA2800E329B6 /* AcneModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */; };
 		F68F128F25EF35F900DF109B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68F128E25EF35F900DF109B /* ContentView.swift */; };
@@ -69,7 +69,6 @@
 		8EE530C325D8E31200E92C82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EE530C525D8E31200E92C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C080DF17E15BF8B76B35F00B /* Pods-CareKit Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareKit Sample.release.xcconfig"; path = "Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample.release.xcconfig"; sourceTree = "<group>"; };
-		F659CF2B25E4A2CB0063E480 /* acne_classification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = acne_classification.mlmodel; path = ../../../acne_classification.mlmodel; sourceTree = "<group>"; };
 		F65E663625E399430009CBB4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F65E663925E39B910009CBB4 /* LaunchUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUIView.swift; sourceTree = "<group>"; };
 		F65E663C25E39C2F0009CBB4 /* OnboardingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUIView.swift; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		F65E665625E3A3530009CBB4 /* PasswordlessLoginStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordlessLoginStep.swift; sourceTree = "<group>"; };
 		F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCoordinator.swift; sourceTree = "<group>"; };
 		F65E669C25E3B39A0009CBB4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F66F913D25F70FF900A78360 /* acne_classification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = acne_classification.mlmodel; sourceTree = "<group>"; };
 		F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcneModelViewController.swift; sourceTree = "<group>"; };
 		F68F128E25EF35F900DF109B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -208,9 +208,9 @@
 				8E7FFF7C25DA246C002982B4 /* CareKit */,
 				8EE530EC25DA154900E92C82 /* Firebase */,
 				8EE530C025D8E31200E92C82 /* Assets.xcassets */,
-				F659CF2B25E4A2CB0063E480 /* acne_classification.mlmodel */,
 				F65E663625E399430009CBB4 /* Launch Screen.storyboard */,
 				F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */,
+				F66F913D25F70FF900A78360 /* acne_classification.mlmodel */,
 				8EE530C525D8E31200E92C82 /* Info.plist */,
 				F65E664A25E39F670009CBB4 /* Config.plist */,
 				F65E664D25E39FF20009CBB4 /* Constants.swift */,
@@ -385,10 +385,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E7FFF9825DA4638002982B4 /* ScheduleViewControllerRepresentable.swift in Sources */,
+				F66F913E25F70FF900A78360 /* acne_classification.mlmodel in Sources */,
 				F65E663A25E39B910009CBB4 /* LaunchUIView.swift in Sources */,
 				8E7FFF8D25DA26D7002982B4 /* CKSendHelper.swift in Sources */,
 				8E7FFF8625DA24D0002982B4 /* CKCareKitManager+Sample.swift in Sources */,
-				F659CF2C25E4A2CB0063E480 /* acne_classification.mlmodel in Sources */,
 				F65E665325E3A1330009CBB4 /* Metrics.swift in Sources */,
 				F65E665725E3A3530009CBB4 /* PasswordlessLoginStep.swift in Sources */,
 				F65E665E25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift in Sources */,
