@@ -78,7 +78,23 @@ internal extension OCKStore {
         You can modify this text with any instructions of your choice!
         """
         
-        addTasks([meds, rehab], callbackQueue: .main) { result in
+        /**
+         * This is not an intended feature of CareKit out of the box, but it lets us group medications.
+         * Please study this implementation thoroughly before using it out of the box.
+         */
+        let groupedMedications = ["Acetaminophen", "Adderall", "Amitriptyline", "Amlodipine", "Amoxicillin"]
+        var scheduleItems = [OCKSchedule]()
+        for med in groupedMedications {
+            scheduleItems.append(OCKSchedule.dailyAtTime(hour: 8, minutes: 0, start: startOfWeek1, end: endOfWeek1, text: med))
+        }
+        let groupedSchedule = OCKSchedule(composing: scheduleItems)
+        let groupedInstruction = "This task is for \(scheduleItems.count) medication(s)"
+        
+        var morningGroup = OCKTask(id: "morning-group", title: "Morning Pills", carePlanUUID: nil, schedule: groupedSchedule)
+        morningGroup.instructions = groupedInstruction
+        
+        
+        addTasks([meds, rehab, morningGroup], callbackQueue: .main) { result in
             switch result {
             case let .success(tasks):
                 print("Added \(tasks.count) tasks")

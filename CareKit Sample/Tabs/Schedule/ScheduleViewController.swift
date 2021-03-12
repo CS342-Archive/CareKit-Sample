@@ -16,6 +16,8 @@ class ScheduleViewController: OCKDailyPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Schedule"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Print Outcomes", style: .plain, target: self, action: #selector(printOutcomes))
     }
     
     override func dailyPageViewController(_ dailyPageViewController: OCKDailyPageViewController, prepare listViewController: OCKListViewController, for date: Date) {
@@ -27,6 +29,10 @@ class ScheduleViewController: OCKDailyPageViewController {
         // Rehab
         let rehabViewController = OCKGridTaskViewController(taskID: "rehab", eventQuery: OCKEventQuery(for: date), storeManager: storeManager)
         listViewController.appendViewController(rehabViewController, animated: true)
+        
+        // Morning Group
+        let morningController = OCKChecklistTaskViewController(taskID: "morning-group", eventQuery: OCKEventQuery(for: date), storeManager: storeManager)
+        listViewController.appendViewController(morningController, animated: true)
         
         // Charts
         let rehabConfig = OCKDataSeriesConfiguration(taskID: "rehab", legendTitle: "Rehab", gradientStartColor: .systemGray, gradientEndColor: .systemGray, markerSize: 6, eventAggregator: .countOutcomeValues)
@@ -42,6 +48,52 @@ class ScheduleViewController: OCKDailyPageViewController {
         listViewController.appendViewController(surveyCard, animated: true)
         
         super.dailyPageViewController(dailyPageViewController, prepare: listViewController, for: date)
+    }
+    
+}
+
+extension ScheduleViewController {
+    
+    @objc fileprivate func printOutcomes() {
+        let query = OCKOutcomeQuery()
+        storeManager.store.fetchAnyOutcomes(query: query, callbackQueue: .main) { (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let outcomes):
+                for anyOutcome in outcomes {
+                    let outcome = anyOutcome as! OCKOutcome
+                    print("Outcome for task \(outcome.taskUUID) with index \(outcome.taskOccurrenceIndex) and value \(outcome.values)")
+                    self.printTask(byId: outcome.taskUUID, withIndex: outcome.taskOccurrenceIndex)
+                }
+            }
+        }
+    
+    }
+    
+    fileprivate func printTask(byId id: UUID, withIndex index: Int) {
+        var query = OCKTaskQuery()
+        query.uuids = [id]
+        
+        storeManager.store.fetchAnyTasks(query: query, callbackQueue: .main) { (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let tasks):
+                for task in tasks {
+                    print("------start task")
+                    print(task.id)
+                    print(task.title ?? "no title")
+                    print(task.instructions ?? "no instructions")
+                    print("scheduled:")
+                    for (i, element) in task.schedule.elements.enumerated() {
+                        print("\(index == i ? "[X]": "")" + "\t" + (element.text ?? ""))
+                    }
+                    print("------end task")
+                }
+            }
+        }
+        
     }
     
 }
