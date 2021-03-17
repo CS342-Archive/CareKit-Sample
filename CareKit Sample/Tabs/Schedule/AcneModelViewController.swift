@@ -149,10 +149,11 @@ class SkinAIViewSynchronizer: OCKInstructionsTaskViewSynchronizer {
     // Check if an answer exists or not and set the detail label accordingly
     let element: [OCKAnyEvent]? = context.viewModel.first
     let firstEvent = element?.first
+    view.headerView.titleLabel.text = "Skin Diagnosis"
     if let acneLevel = firstEvent?.outcome?.values.first {
-      view.headerView.detailLabel.text = "Thank you for taking your skin diagnosis."
+      view.headerView.detailLabel.text = "Thank you for completing your skin diagnosis."
     } else {
-      view.headerView.detailLabel.text = "How is your skin today?"
+      view.headerView.detailLabel.text = "Please take your skin diagnosis so we can monitor you skin progession."
     }
   }
 }

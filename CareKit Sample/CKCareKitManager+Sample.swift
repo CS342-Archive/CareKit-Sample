@@ -80,19 +80,19 @@ internal extension OCKStore {
     
     fileprivate func seedResearchKitSample() {
         let startOfWeek1 = Calendar.current.startOfDay(for: Date())
-        let surveySchedule = OCKSchedule.weeklyAtTime(weekday: 1, hours: 12, minutes: 0, start: startOfWeek1, end: nil, targetValues: [], text: "")
+        let surveySchedule = OCKSchedule.weeklyAtTime(weekday: 7, hours: 12, minutes: 0, start: startOfWeek1, end: nil, targetValues: [], text: "")
         var survey = OCKTask(id: "survey", title: "Take your skin survey", carePlanUUID: nil, schedule: surveySchedule)
         survey.impactsAdherence = true
-        survey.instructions = "Please take your skin survey so we can know how you are doing."
+//        survey.instructions = "Please take your skin survey so we can know how you are doing."
         addTasks([survey], callbackQueue: .main, completion: nil)
     }
     
     fileprivate func seedSkinAI() {
         let startOfWeek1 = Calendar.current.startOfDay(for: Date())
-        let skinAISchedule = OCKSchedule.weeklyAtTime(weekday: 1, hours: 12, minutes: 0, start: startOfWeek1, end: nil, targetValues: [], text: "")
+        let skinAISchedule = OCKSchedule.weeklyAtTime(weekday: 7, hours: 12, minutes: 0, start: startOfWeek1, end: nil, targetValues: [], text: "")
         var skinAI = OCKTask(id: "skinAI", title: "Take your skin diagnosis", carePlanUUID: nil, schedule: skinAISchedule)
         skinAI.impactsAdherence = true
-        skinAI.instructions = "Please take your skin diagnosis so we can monitor you skin progession."
+//        skinAI.instructions = "Please take your skin diagnosis so we can monitor you skin progession."
         addTasks([skinAI], callbackQueue: .main, completion: nil)
     }
 }

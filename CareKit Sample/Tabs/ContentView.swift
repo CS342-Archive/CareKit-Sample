@@ -23,7 +23,7 @@ struct ContentView: View {
                 Text("Schedule")
             }
             
-            CoffeeUIView().tabItem {
+            LineGraphUIView().tabItem {
                     Image("tab_tasks").renderingMode(.template)
                     Text("Chart")
             }

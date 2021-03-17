@@ -143,11 +143,11 @@ class SurveyItemViewSynchronizer: OCKInstructionsTaskViewSynchronizer {
         // Check if an answer exists or not and set the detail label accordingly
         let element: [OCKAnyEvent]? = context.viewModel.first
         let firstEvent = element?.first
-        
+        view.headerView.titleLabel.text = "Skin Survey"
         if (firstEvent?.outcome?.values.first) != nil {
-            view.headerView.detailLabel.text = "Thank you for completing your survey."
+            view.headerView.detailLabel.text = "Thank you for completing your skin survey."
         } else {
-            view.headerView.detailLabel.text = "How are you feeling today?"
+            view.headerView.detailLabel.text = "Please take your skin survey so we can know how you are doing."
         }
     }
 }
