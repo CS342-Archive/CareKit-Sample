@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Tint Color</key>
+	<string>#92bcc1</string>
 	<key>Login Step Text</key>
 	<string>Please sign-up with a valid email adress. </string>
 	<key>Login Step Title</key>

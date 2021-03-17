@@ -96,7 +96,6 @@ struct OnboardingSurveyViewController: UIViewControllerRepresentable {
         let emailVerificationSteps = loginSteps // + [passcodeStep]
         
         var onbardingSurveySteps = [ORKStep]()
-        let answerFormatEmail = ORKAnswerFormat.emailAnswerFormat()
         let stringAnswerFormat = ORKTextAnswerFormat()
         let numberAnswerFormat = ORKNumericAnswerFormat(style: .integer, unit: nil, minimum: 18 as NSNumber, maximum: 100 as NSNumber)
 
@@ -105,10 +104,10 @@ struct OnboardingSurveyViewController: UIViewControllerRepresentable {
         let firstNameFormItem = ORKFormItem(identifier: "RegistrationForm-FirstName", text: "First Name", answerFormat: stringAnswerFormat)
         let lastNameFormItem = ORKFormItem(identifier: "RegistrationForm-LastName", text: "Last Name", answerFormat: stringAnswerFormat)
         let ageFromItem = ORKFormItem(identifier: "RegistrationForm-Age", text: "Age", answerFormat: numberAnswerFormat)
-        let emailFormItem = ORKFormItem(identifier: "RegistrationForm-Email", text: "Email", answerFormat: answerFormatEmail)
+        
         // registration form
         let formStep = ORKFormStep(identifier: "RegistrationForm", title: "About you", text: "Before we get started, tell us a little bit about yourself")
-        formStep.formItems = [AboutYouFormItem, firstNameFormItem, lastNameFormItem, ageFromItem, emailFormItem]
+        formStep.formItems = [AboutYouFormItem, firstNameFormItem, lastNameFormItem, ageFromItem]
         onbardingSurveySteps += [formStep]
 
         // Question 4 is asking about allergies
@@ -147,7 +146,7 @@ struct OnboardingSurveyViewController: UIViewControllerRepresentable {
         onbardingSurveySteps += [skinIssuesQuestionStep]
         
         // guide the user through ALL steps
-        let fullSteps = emailVerificationSteps + onbardingSurveySteps
+        let fullSteps = emailVerificationSteps + onbardingSurveySteps 
 
         /* **************************************************************
         * and SHOW the user these steps!

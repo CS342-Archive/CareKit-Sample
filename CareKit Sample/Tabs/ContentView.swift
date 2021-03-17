@@ -17,13 +17,19 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
+            
             ScheduleViewControllerRepresentable().tabItem {
                 Image("tab_schedule").renderingMode(.template)
                 Text("Schedule")
             }
             
+            CoffeeUIView().tabItem {
+                    Image("tab_tasks").renderingMode(.template)
+                    Text("Chart")
+            }
+            
             CareTeamViewControllerRepresentable().tabItem {
-                Image("tab_care").renderingMode(.template)
+                Image("tab_profile").renderingMode(.template)
                 Text("Contact")
             }
         }

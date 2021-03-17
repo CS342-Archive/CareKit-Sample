@@ -40,6 +40,9 @@
 		F65E665E25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */; };
 		F65E669D25E3B39A0009CBB4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E669C25E3B39A0009CBB4 /* PageViewController.swift */; };
 		F66F913E25F70FF900A78360 /* acne_classification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F66F913D25F70FF900A78360 /* acne_classification.mlmodel */; };
+		F67796C42601A14200ABEF8D /* LineGraphChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67796C32601A14200ABEF8D /* LineGraphChartView.swift */; };
+		F67796C72601A1C700ABEF8D /* LineGraphChartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67796C62601A1C700ABEF8D /* LineGraphChartDataSource.swift */; };
+		F67796CA2601A1F000ABEF8D /* CoffeeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67796C92601A1F000ABEF8D /* CoffeeUIView.swift */; };
 		F67EF41125EC82BB00E7713E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */; };
 		F6836BFE25EDBA2800E329B6 /* AcneModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */; };
 		F68F128F25EF35F900DF109B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68F128E25EF35F900DF109B /* ContentView.swift */; };
@@ -81,6 +84,9 @@
 		F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCoordinator.swift; sourceTree = "<group>"; };
 		F65E669C25E3B39A0009CBB4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		F66F913D25F70FF900A78360 /* acne_classification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = acne_classification.mlmodel; sourceTree = "<group>"; };
+		F67796C32601A14200ABEF8D /* LineGraphChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphChartView.swift; sourceTree = "<group>"; };
+		F67796C62601A1C700ABEF8D /* LineGraphChartDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphChartDataSource.swift; sourceTree = "<group>"; };
+		F67796C92601A1F000ABEF8D /* CoffeeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeUIView.swift; sourceTree = "<group>"; };
 		F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcneModelViewController.swift; sourceTree = "<group>"; };
 		F68F128E25EF35F900DF109B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 		8E7FFFB525DCEAFE002982B4 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				F67796B5260198C700ABEF8D /* Chart */,
 				F65E662025E3958D0009CBB4 /* Onboarding */,
 				8E7FFF9025DA4621002982B4 /* Schedule */,
 				8E7FFF9125DA4626002982B4 /* Care Team */,
@@ -256,6 +263,16 @@
 				F65E669C25E3B39A0009CBB4 /* PageViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F67796B5260198C700ABEF8D /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				F67796C32601A14200ABEF8D /* LineGraphChartView.swift */,
+				F67796C62601A1C700ABEF8D /* LineGraphChartDataSource.swift */,
+				F67796C92601A1F000ABEF8D /* CoffeeUIView.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +406,7 @@
 				F65E663A25E39B910009CBB4 /* LaunchUIView.swift in Sources */,
 				8E7FFF8D25DA26D7002982B4 /* CKSendHelper.swift in Sources */,
 				8E7FFF8625DA24D0002982B4 /* CKCareKitManager+Sample.swift in Sources */,
+				F67796CA2601A1F000ABEF8D /* CoffeeUIView.swift in Sources */,
 				F65E665325E3A1330009CBB4 /* Metrics.swift in Sources */,
 				F65E665725E3A3530009CBB4 /* PasswordlessLoginStep.swift in Sources */,
 				F65E665E25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift in Sources */,
@@ -404,8 +422,10 @@
 				F65E669D25E3B39A0009CBB4 /* PageViewController.swift in Sources */,
 				F65E663D25E39C2F0009CBB4 /* OnboardingUIView.swift in Sources */,
 				8E7FFF8925DA267E002982B4 /* CKStudyUser.swift in Sources */,
+				F67796C42601A14200ABEF8D /* LineGraphChartView.swift in Sources */,
 				8E7FFF8225DA24AA002982B4 /* CKCareKitManager.swift in Sources */,
 				F65E664E25E39FF20009CBB4 /* Constants.swift in Sources */,
+				F67796C72601A1C700ABEF8D /* LineGraphChartDataSource.swift in Sources */,
 				8E7FFF9D25DA4656002982B4 /* CareTeamViewControllerRepresentable.swift in Sources */,
 				F6836BFE25EDBA2800E329B6 /* AcneModelViewController.swift in Sources */,
 				8EE530BD25D8E31100E92C82 /* CareKit_SampleApp.swift in Sources */,
