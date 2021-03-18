@@ -25,14 +25,19 @@ struct ContentView: View {
                     Text("Schedule")
                 }
             
-            LineView(data: [8,23,54,32,12,37,7,23,43],
-                     title: "Line chart",
-                     legend: "Full screen")
-                .padding(10)
-                .tabItem {
-                    Image("tab_tasks").renderingMode(.template)
-                    Text("Chart")
-                }
+            if let arr = (UserDefaults.standard.array(forKey: "user_default_array") ?? []) as? [Double] {
+                LineView(data: arr,
+                         title: "Line chart",
+                         legend: "Full screen")
+                    .padding(10)
+                    .tabItem {
+                        Image("tab_tasks").renderingMode(.template)
+                        Text("Chart")
+                    }
+            } 
+            
+            
+            
             
             CareTeamViewControllerRepresentable()
                 .tabItem {
