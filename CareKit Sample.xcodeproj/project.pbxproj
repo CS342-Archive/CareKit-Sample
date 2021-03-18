@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E24AA2F2602EF57005FFF2D /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 8E24AA2E2602EF57005FFF2D /* SwiftUICharts */; };
 		8E7FFF7E25DA2476002982B4 /* CKCareKitRemoteSyncWithFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFF7D25DA2476002982B4 /* CKCareKitRemoteSyncWithFirestore.swift */; };
 		8E7FFF8225DA24AA002982B4 /* CKCareKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFF8125DA24AA002982B4 /* CKCareKitManager.swift */; };
 		8E7FFF8625DA24D0002982B4 /* CKCareKitManager+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFF8525DA24D0002982B4 /* CKCareKitManager+Sample.swift */; };
@@ -100,6 +101,7 @@
 				8EE530D025D8E41200E92C82 /* CareKit in Frameworks */,
 				8EE530D225D8E41200E92C82 /* CareKitFHIR in Frameworks */,
 				8EE530D425D8E41200E92C82 /* CareKitUI in Frameworks */,
+				8E24AA2F2602EF57005FFF2D /* SwiftUICharts in Frameworks */,
 				8EE530CE25D8E41200E92C82 /* CareKitStore in Frameworks */,
 				CE0B6EC051BEC21932F879CA /* Pods_CareKit_Sample.framework in Frameworks */,
 			);
@@ -298,6 +300,7 @@
 				8EE530CF25D8E41200E92C82 /* CareKit */,
 				8EE530D125D8E41200E92C82 /* CareKitFHIR */,
 				8EE530D325D8E41200E92C82 /* CareKitUI */,
+				8E24AA2E2602EF57005FFF2D /* SwiftUICharts */,
 			);
 			productName = "CareKit Sample";
 			productReference = 8EE530B925D8E31100E92C82 /* CareKit Sample.app */;
@@ -329,6 +332,7 @@
 			mainGroup = 8EE530B025D8E31100E92C82;
 			packageReferences = (
 				8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */,
+				8E24AA2D2602EF56005FFF2D /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 8EE530BA25D8E31100E92C82 /* Products */;
 			projectDirPath = "";
@@ -627,6 +631,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8E24AA2D2602EF56005FFF2D /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
 		8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carekit-apple/CareKit";
@@ -638,6 +650,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8E24AA2E2602EF57005FFF2D /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E24AA2D2602EF56005FFF2D /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
 		8EE530CD25D8E41200E92C82 /* CareKitStore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */;
