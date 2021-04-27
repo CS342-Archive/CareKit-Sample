@@ -27,7 +27,7 @@ struct CareKit_SampleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchUIView()
         }
     }
 }

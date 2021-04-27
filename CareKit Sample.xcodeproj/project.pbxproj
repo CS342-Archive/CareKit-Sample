@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CAB8B817CADA9997FF1A039 /* Pods_CareKit_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D3D46F99949809F1E2362 /* Pods_CareKit_Sample.framework */; };
+		8E24AA2F2602EF57005FFF2D /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 8E24AA2E2602EF57005FFF2D /* SwiftUICharts */; };
 		8E7FFF7E25DA2476002982B4 /* CKCareKitRemoteSyncWithFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFF7D25DA2476002982B4 /* CKCareKitRemoteSyncWithFirestore.swift */; };
 		8E7FFF8225DA24AA002982B4 /* CKCareKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFF8125DA24AA002982B4 /* CKCareKitManager.swift */; };
 		8E7FFF8625DA24D0002982B4 /* CKCareKitManager+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFF8525DA24D0002982B4 /* CKCareKitManager+Sample.swift */; };
@@ -18,24 +18,40 @@
 		8E7FFF9925DA4638002982B4 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFF9525DA4638002982B4 /* TipView.swift */; };
 		8E7FFF9A25DA4638002982B4 /* SurveyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFF9625DA4638002982B4 /* SurveyItemViewController.swift */; };
 		8E7FFF9D25DA4656002982B4 /* CareTeamViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFF9C25DA4656002982B4 /* CareTeamViewControllerRepresentable.swift */; };
-		8E7FFFA225DA49D6002982B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E7FFFA125DA49D6002982B4 /* GoogleService-Info.plist */; };
 		8E7FFFA625DA4D95002982B4 /* CKTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFFA525DA4D95002982B4 /* CKTaskViewController.swift */; };
 		8E7FFFAC25DA4E05002982B4 /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFFAA25DA4E05002982B4 /* ORKESerialization.m */; };
 		8E7FFFAF25DA56E2002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFFAE25DA56E2002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift */; };
 		8EE530BD25D8E31100E92C82 /* CareKit_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE530BC25D8E31100E92C82 /* CareKit_SampleApp.swift */; };
-		8EE530BF25D8E31100E92C82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE530BE25D8E31100E92C82 /* ContentView.swift */; };
 		8EE530C125D8E31200E92C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE530C025D8E31200E92C82 /* Assets.xcassets */; };
 		8EE530C425D8E31200E92C82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE530C325D8E31200E92C82 /* Preview Assets.xcassets */; };
 		8EE530CE25D8E41200E92C82 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530CD25D8E41200E92C82 /* CareKitStore */; };
 		8EE530D025D8E41200E92C82 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530CF25D8E41200E92C82 /* CareKit */; };
 		8EE530D225D8E41200E92C82 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530D125D8E41200E92C82 /* CareKitFHIR */; };
 		8EE530D425D8E41200E92C82 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE530D325D8E41200E92C82 /* CareKitUI */; };
+		CE0B6EC051BEC21932F879CA /* Pods_CareKit_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802A4A5BA15F6E096A993083 /* Pods_CareKit_Sample.framework */; };
+		F65E663725E399430009CBB4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65E663625E399430009CBB4 /* Launch Screen.storyboard */; };
+		F65E663A25E39B910009CBB4 /* LaunchUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E663925E39B910009CBB4 /* LaunchUIView.swift */; };
+		F65E663D25E39C2F0009CBB4 /* OnboardingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E663C25E39C2F0009CBB4 /* OnboardingUIView.swift */; };
+		F65E664425E39CD30009CBB4 /* OnboardingSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E664325E39CD30009CBB4 /* OnboardingSurveyViewController.swift */; };
+		F65E664825E39EC60009CBB4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E664725E39EC60009CBB4 /* Config.swift */; };
+		F65E664B25E39F670009CBB4 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = F65E664A25E39F670009CBB4 /* Config.plist */; };
+		F65E664E25E39FF20009CBB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E664D25E39FF20009CBB4 /* Constants.swift */; };
+		F65E665325E3A1330009CBB4 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E665225E3A1330009CBB4 /* Metrics.swift */; };
+		F65E665725E3A3530009CBB4 /* PasswordlessLoginStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E665625E3A3530009CBB4 /* PasswordlessLoginStep.swift */; };
+		F65E665E25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */; };
+		F65E669D25E3B39A0009CBB4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E669C25E3B39A0009CBB4 /* PageViewController.swift */; };
+		F66F913E25F70FF900A78360 /* acne_classification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F66F913D25F70FF900A78360 /* acne_classification.mlmodel */; };
+		F67796C42601A14200ABEF8D /* LineGraphChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67796C32601A14200ABEF8D /* LineGraphChartView.swift */; };
+		F67796C72601A1C700ABEF8D /* LineGraphChartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67796C62601A1C700ABEF8D /* LineGraphChartDataSource.swift */; };
+		F67796CA2601A1F000ABEF8D /* LineGraphUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67796C92601A1F000ABEF8D /* LineGraphUIView.swift */; };
+		F67EF41125EC82BB00E7713E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */; };
+		F6836BFE25EDBA2800E329B6 /* AcneModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */; };
+		F68F128F25EF35F900DF109B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68F128E25EF35F900DF109B /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		189D3D46F99949809F1E2362 /* Pods_CareKit_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareKit_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		32EE0C31BB55DD1BC53FF0A4 /* Pods-CareKit Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareKit Sample.debug.xcconfig"; path = "Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample.debug.xcconfig"; sourceTree = "<group>"; };
-		63021CBA05620C69C8373068 /* Pods-CareKit Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareKit Sample.release.xcconfig"; path = "Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample.release.xcconfig"; sourceTree = "<group>"; };
+		78353591FD67768226A50BB0 /* Pods-CareKit Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareKit Sample.debug.xcconfig"; path = "Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		802A4A5BA15F6E096A993083 /* Pods_CareKit_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareKit_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7FFF7D25DA2476002982B4 /* CKCareKitRemoteSyncWithFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCareKitRemoteSyncWithFirestore.swift; sourceTree = "<group>"; };
 		8E7FFF8125DA24AA002982B4 /* CKCareKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCareKitManager.swift; sourceTree = "<group>"; };
 		8E7FFF8525DA24D0002982B4 /* CKCareKitManager+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKCareKitManager+Sample.swift"; sourceTree = "<group>"; };
@@ -46,7 +62,6 @@
 		8E7FFF9525DA4638002982B4 /* TipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		8E7FFF9625DA4638002982B4 /* SurveyItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyItemViewController.swift; sourceTree = "<group>"; };
 		8E7FFF9C25DA4656002982B4 /* CareTeamViewControllerRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareTeamViewControllerRepresentable.swift; sourceTree = "<group>"; };
-		8E7FFFA125DA49D6002982B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E7FFFA525DA4D95002982B4 /* CKTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKTaskViewController.swift; sourceTree = "<group>"; };
 		8E7FFFA925DA4E03002982B4 /* CareKit Sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CareKit Sample-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E7FFFAA25DA4E05002982B4 /* ORKESerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKESerialization.m; sourceTree = "<group>"; };
@@ -54,10 +69,28 @@
 		8E7FFFAE25DA56E2002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKUploadToGCPTaskViewControllerDelegate.swift; sourceTree = "<group>"; };
 		8EE530B925D8E31100E92C82 /* CareKit Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CareKit Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE530BC25D8E31100E92C82 /* CareKit_SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKit_SampleApp.swift; sourceTree = "<group>"; };
-		8EE530BE25D8E31100E92C82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8EE530C025D8E31200E92C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EE530C325D8E31200E92C82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EE530C525D8E31200E92C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C080DF17E15BF8B76B35F00B /* Pods-CareKit Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareKit Sample.release.xcconfig"; path = "Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample.release.xcconfig"; sourceTree = "<group>"; };
+		F65E663625E399430009CBB4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F65E663925E39B910009CBB4 /* LaunchUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUIView.swift; sourceTree = "<group>"; };
+		F65E663C25E39C2F0009CBB4 /* OnboardingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUIView.swift; sourceTree = "<group>"; };
+		F65E664325E39CD30009CBB4 /* OnboardingSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSurveyViewController.swift; sourceTree = "<group>"; };
+		F65E664725E39EC60009CBB4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F65E664A25E39F670009CBB4 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		F65E664D25E39FF20009CBB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F65E665225E3A1330009CBB4 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		F65E665625E3A3530009CBB4 /* PasswordlessLoginStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordlessLoginStep.swift; sourceTree = "<group>"; };
+		F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCoordinator.swift; sourceTree = "<group>"; };
+		F65E669C25E3B39A0009CBB4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F66F913D25F70FF900A78360 /* acne_classification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = acne_classification.mlmodel; sourceTree = "<group>"; };
+		F67796C32601A14200ABEF8D /* LineGraphChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphChartView.swift; sourceTree = "<group>"; };
+		F67796C62601A1C700ABEF8D /* LineGraphChartDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphChartDataSource.swift; sourceTree = "<group>"; };
+		F67796C92601A1F000ABEF8D /* LineGraphUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphUIView.swift; sourceTree = "<group>"; };
+		F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcneModelViewController.swift; sourceTree = "<group>"; };
+		F68F128E25EF35F900DF109B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +101,9 @@
 				8EE530D025D8E41200E92C82 /* CareKit in Frameworks */,
 				8EE530D225D8E41200E92C82 /* CareKitFHIR in Frameworks */,
 				8EE530D425D8E41200E92C82 /* CareKitUI in Frameworks */,
+				8E24AA2F2602EF57005FFF2D /* SwiftUICharts in Frameworks */,
 				8EE530CE25D8E41200E92C82 /* CareKitStore in Frameworks */,
-				0CAB8B817CADA9997FF1A039 /* Pods_CareKit_Sample.framework in Frameworks */,
+				CE0B6EC051BEC21932F879CA /* Pods_CareKit_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +123,8 @@
 			children = (
 				8E7FFF9425DA4638002982B4 /* Views */,
 				8E7FFF9225DA4635002982B4 /* ScheduleViewController.swift */,
+				8E7FFF9625DA4638002982B4 /* SurveyItemViewController.swift */,
+				F6836BFD25EDBA2800E329B6 /* AcneModelViewController.swift */,
 				8E7FFF9325DA4636002982B4 /* ScheduleViewControllerRepresentable.swift */,
 			);
 			path = Schedule;
@@ -106,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				8E7FFF9525DA4638002982B4 /* TipView.swift */,
-				8E7FFF9625DA4638002982B4 /* SurveyItemViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,9 +159,14 @@
 		8E7FFFB525DCEAFE002982B4 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				F67796B5260198C700ABEF8D /* Chart */,
+				F65E662025E3958D0009CBB4 /* Onboarding */,
 				8E7FFF9025DA4621002982B4 /* Schedule */,
 				8E7FFF9125DA4626002982B4 /* Care Team */,
-				8EE530BE25D8E31100E92C82 /* ContentView.swift */,
+				F65E663925E39B910009CBB4 /* LaunchUIView.swift */,
+				F65E664725E39EC60009CBB4 /* Config.swift */,
+				F65E665225E3A1330009CBB4 /* Metrics.swift */,
+				F68F128E25EF35F900DF109B /* ContentView.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -137,7 +177,7 @@
 				8EE530BB25D8E31100E92C82 /* CareKit Sample */,
 				8EE530BA25D8E31100E92C82 /* Products */,
 				E11BB4F6FC59F3A7669B1072 /* Pods */,
-				EA83C4B652754BD4747D762E /* Frameworks */,
+				D0BC8C690D0221665748075B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,8 +217,12 @@
 				8E7FFF7C25DA246C002982B4 /* CareKit */,
 				8EE530EC25DA154900E92C82 /* Firebase */,
 				8EE530C025D8E31200E92C82 /* Assets.xcassets */,
-				8E7FFFA125DA49D6002982B4 /* GoogleService-Info.plist */,
+				F65E663625E399430009CBB4 /* Launch Screen.storyboard */,
+				F67EF41025EC82BB00E7713E /* GoogleService-Info.plist */,
+				F66F913D25F70FF900A78360 /* acne_classification.mlmodel */,
 				8EE530C525D8E31200E92C82 /* Info.plist */,
+				F65E664A25E39F670009CBB4 /* Config.plist */,
+				F65E664D25E39FF20009CBB4 /* Constants.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -194,21 +238,43 @@
 			path = Firebase;
 			sourceTree = "<group>";
 		};
+		D0BC8C690D0221665748075B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				802A4A5BA15F6E096A993083 /* Pods_CareKit_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E11BB4F6FC59F3A7669B1072 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				32EE0C31BB55DD1BC53FF0A4 /* Pods-CareKit Sample.debug.xcconfig */,
-				63021CBA05620C69C8373068 /* Pods-CareKit Sample.release.xcconfig */,
+				78353591FD67768226A50BB0 /* Pods-CareKit Sample.debug.xcconfig */,
+				C080DF17E15BF8B76B35F00B /* Pods-CareKit Sample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		EA83C4B652754BD4747D762E /* Frameworks */ = {
+		F65E662025E3958D0009CBB4 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				189D3D46F99949809F1E2362 /* Pods_CareKit_Sample.framework */,
+				F65E663C25E39C2F0009CBB4 /* OnboardingUIView.swift */,
+				F65E664325E39CD30009CBB4 /* OnboardingSurveyViewController.swift */,
+				F65E665625E3A3530009CBB4 /* PasswordlessLoginStep.swift */,
+				F65E665D25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift */,
+				F65E669C25E3B39A0009CBB4 /* PageViewController.swift */,
 			);
-			name = Frameworks;
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F67796B5260198C700ABEF8D /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				F67796C32601A14200ABEF8D /* LineGraphChartView.swift */,
+				F67796C62601A1C700ABEF8D /* LineGraphChartDataSource.swift */,
+				F67796C92601A1F000ABEF8D /* LineGraphUIView.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,11 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EE530C825D8E31200E92C82 /* Build configuration list for PBXNativeTarget "CareKit Sample" */;
 			buildPhases = (
-				CD247DEABED9B59A0385662B /* [CP] Check Pods Manifest.lock */,
+				5CEC8F828FCA09969F7E6D85 /* [CP] Check Pods Manifest.lock */,
 				8EE530B525D8E31100E92C82 /* Sources */,
 				8EE530B625D8E31100E92C82 /* Frameworks */,
 				8EE530B725D8E31100E92C82 /* Resources */,
-				8D1F707A368F58776F259896 /* [CP] Embed Pods Frameworks */,
+				BD7F93125045B231AD9B7BD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +300,7 @@
 				8EE530CF25D8E41200E92C82 /* CareKit */,
 				8EE530D125D8E41200E92C82 /* CareKitFHIR */,
 				8EE530D325D8E41200E92C82 /* CareKitUI */,
+				8E24AA2E2602EF57005FFF2D /* SwiftUICharts */,
 			);
 			productName = "CareKit Sample";
 			productReference = 8EE530B925D8E31100E92C82 /* CareKit Sample.app */;
@@ -265,6 +332,7 @@
 			mainGroup = 8EE530B025D8E31100E92C82;
 			packageReferences = (
 				8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */,
+				8E24AA2D2602EF56005FFF2D /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 8EE530BA25D8E31100E92C82 /* Products */;
 			projectDirPath = "";
@@ -281,7 +349,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EE530C425D8E31200E92C82 /* Preview Assets.xcassets in Resources */,
-				8E7FFFA225DA49D6002982B4 /* GoogleService-Info.plist in Resources */,
+				F65E663725E399430009CBB4 /* Launch Screen.storyboard in Resources */,
+				F67EF41125EC82BB00E7713E /* GoogleService-Info.plist in Resources */,
+				F65E664B25E39F670009CBB4 /* Config.plist in Resources */,
 				8EE530C125D8E31200E92C82 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,24 +359,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8D1F707A368F58776F259896 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD247DEABED9B59A0385662B /* [CP] Check Pods Manifest.lock */ = {
+		5CEC8F828FCA09969F7E6D85 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,6 +381,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BD7F93125045B231AD9B7BD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CareKit Sample/Pods-CareKit Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -336,18 +406,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E7FFF9825DA4638002982B4 /* ScheduleViewControllerRepresentable.swift in Sources */,
+				F66F913E25F70FF900A78360 /* acne_classification.mlmodel in Sources */,
+				F65E663A25E39B910009CBB4 /* LaunchUIView.swift in Sources */,
 				8E7FFF8D25DA26D7002982B4 /* CKSendHelper.swift in Sources */,
 				8E7FFF8625DA24D0002982B4 /* CKCareKitManager+Sample.swift in Sources */,
+				F67796CA2601A1F000ABEF8D /* LineGraphUIView.swift in Sources */,
+				F65E665325E3A1330009CBB4 /* Metrics.swift in Sources */,
+				F65E665725E3A3530009CBB4 /* PasswordlessLoginStep.swift in Sources */,
+				F65E665E25E3A82A0009CBB4 /* OnboardingViewCoordinator.swift in Sources */,
+				F65E664825E39EC60009CBB4 /* Config.swift in Sources */,
+				F65E664425E39CD30009CBB4 /* OnboardingSurveyViewController.swift in Sources */,
+				F68F128F25EF35F900DF109B /* ContentView.swift in Sources */,
 				8E7FFF7E25DA2476002982B4 /* CKCareKitRemoteSyncWithFirestore.swift in Sources */,
 				8E7FFF9925DA4638002982B4 /* TipView.swift in Sources */,
 				8E7FFF9725DA4638002982B4 /* ScheduleViewController.swift in Sources */,
 				8E7FFFA625DA4D95002982B4 /* CKTaskViewController.swift in Sources */,
 				8E7FFFAF25DA56E2002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */,
 				8E7FFF9A25DA4638002982B4 /* SurveyItemViewController.swift in Sources */,
+				F65E669D25E3B39A0009CBB4 /* PageViewController.swift in Sources */,
+				F65E663D25E39C2F0009CBB4 /* OnboardingUIView.swift in Sources */,
 				8E7FFF8925DA267E002982B4 /* CKStudyUser.swift in Sources */,
+				F67796C42601A14200ABEF8D /* LineGraphChartView.swift in Sources */,
 				8E7FFF8225DA24AA002982B4 /* CKCareKitManager.swift in Sources */,
+				F65E664E25E39FF20009CBB4 /* Constants.swift in Sources */,
+				F67796C72601A1C700ABEF8D /* LineGraphChartDataSource.swift in Sources */,
 				8E7FFF9D25DA4656002982B4 /* CareTeamViewControllerRepresentable.swift in Sources */,
-				8EE530BF25D8E31100E92C82 /* ContentView.swift in Sources */,
+				F6836BFE25EDBA2800E329B6 /* AcneModelViewController.swift in Sources */,
 				8EE530BD25D8E31100E92C82 /* CareKit_SampleApp.swift in Sources */,
 				8E7FFFAC25DA4E05002982B4 /* ORKESerialization.m in Sources */,
 			);
@@ -474,14 +558,14 @@
 		};
 		8EE530C925D8E31200E92C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32EE0C31BB55DD1BC53FF0A4 /* Pods-CareKit Sample.debug.xcconfig */;
+			baseConfigurationReference = 78353591FD67768226A50BB0 /* Pods-CareKit Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CareKit Sample/Supporting Files/Preview Content\"";
-				DEVELOPMENT_TEAM = CQRZ4E7K9U;
+				DEVELOPMENT_TEAM = 8QL2EG96Y4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CareKit Sample/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -489,7 +573,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs342.carekit.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs342.carekit.skinai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CareKit Sample/Supporting Files/ResearchKit/CareKit Sample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -500,14 +584,14 @@
 		};
 		8EE530CA25D8E31200E92C82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63021CBA05620C69C8373068 /* Pods-CareKit Sample.release.xcconfig */;
+			baseConfigurationReference = C080DF17E15BF8B76B35F00B /* Pods-CareKit Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CareKit Sample/Supporting Files/Preview Content\"";
-				DEVELOPMENT_TEAM = CQRZ4E7K9U;
+				DEVELOPMENT_TEAM = 8QL2EG96Y4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CareKit Sample/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -515,7 +599,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs342.carekit.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs342.carekit.skinai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CareKit Sample/Supporting Files/ResearchKit/CareKit Sample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -547,6 +631,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8E24AA2D2602EF56005FFF2D /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
 		8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carekit-apple/CareKit";
@@ -558,6 +650,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8E24AA2E2602EF57005FFF2D /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E24AA2D2602EF56005FFF2D /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
 		8EE530CD25D8E41200E92C82 /* CareKitStore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8EE530CC25D8E41200E92C82 /* XCRemoteSwiftPackageReference "CareKit" */;

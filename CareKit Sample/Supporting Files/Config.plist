@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Tint Color</key>
+	<string>#92bcc1</string>
+	<key>Login Step Text</key>
+	<string>Please sign-up with a valid email adress. </string>
+	<key>Login Step Title</key>
+	<string>Sign up</string>
+	<key>Team Name</key>
+	<string>Personalized skin care assistant and tracker</string>
+	<key>Study Title</key>
+	<string>SkinAI</string>
+	<key>Completion Step Title</key>
+	<string>All done!</string>
+	<key>Primary Color</key>
+	<string>#92bcc1</string>
+	<key>Onboarding</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Data Collection</string>
+			<key>Description</key>
+			<string>Upload a photo of your skin and tell us about your goals. Don&apos;t worry, your data never leaves your phone and remains private! </string>
+			<key>Logo</key>
+			<string>1️⃣</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Machine Learning</string>
+			<key>Description</key>
+			<string>Our algorithm will analyze your results and prepare a skincare routine made exclusively for you!</string>
+			<key>Logo</key>
+			<string>2️⃣</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Regular Check-ins</string>
+			<key>Description</key>
+			<string>Use our bi-weekly survey to let us know about your skin evolution, we&apos;ll update your routine to always meet your needs. </string>
+			<key>Logo</key>
+			<string>3️⃣</string>
+		</dict>
+	</array>
+</dict>
+</plist>
